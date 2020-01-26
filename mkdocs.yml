@@ -1,13 +1,13 @@
 # Project information
-site_name: "My Docs"
+site_name: "Homepage"
 site_description: ""
 site_author: "derrors"
 site_url: "https://derrors.github.io/derrors-project/"
 
 
 # Repository
-repo_name: "Derrors/Derrors.github.io"
-repo_url: "https://github.com/Derrors/Derrors.github.io"
+repo_name: "Derrors/Derrors"
+repo_url: "https://github.com/Derrors"
 
 
 # Copyright
@@ -19,7 +19,7 @@ theme:
   name: "material"
 
   palette:
-    primary: "purple"
+    primary: "deep purple"
     accent: "deep purple"
 
   font:
