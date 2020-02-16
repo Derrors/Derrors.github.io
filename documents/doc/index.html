@@ -40,7 +40,7 @@
     
     
       
-        <title>文档&教程 - Homepage</title>
+        <title>init - Homepage</title>
       
     
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                文档&教程
+                init
               
             </span>
           
@@ -206,14 +206,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         主页
       </a>
     
@@ -240,8 +242,30 @@
 
       
         
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../notes/notes/" class="md-tabs__link">
+          笔记
+        </a>
+      
+    </li>
+  
+
       
         
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link md-tabs__link--active">
+          文档&教程
+        </a>
+      
+    </li>
+  
+
       
     </ul>
   </div>
@@ -423,10 +447,34 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../notes/notes/" title="笔记" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
       笔记
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        笔记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../notes/notes/" title="init" class="md-nav__link">
+      init
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -437,15 +485,41 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      文档&教程
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        文档&教程
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="文档&教程" class="md-nav__link md-nav__link--active">
-      文档&教程
+    <a href="./" title="init" class="md-nav__link md-nav__link--active">
+      init
     </a>
     
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -464,7 +538,7 @@
                   <a href="https://github.com/Derrors/edit/master/docs/documents/doc.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>文档&教程</h1>
+                  <h1>init</h1>
                 
                 
                 
@@ -488,7 +562,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../notes/notes/" title="笔记" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../notes/notes/" title="init" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -497,7 +571,7 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                笔记
+                init
               </span>
             </div>
           </a>

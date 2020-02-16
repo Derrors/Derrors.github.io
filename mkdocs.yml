@@ -107,6 +107,8 @@ nav:
     - 3. Reviews & Product & QA: repositories/rpqa.md
     - 4. Others: repositories/others.md
 
-  - 笔记: notes/notes.md
-  
-  - 文档&教程: documents/doc.md
+  - 笔记: 
+    - init: notes/notes.md
+
+  - 文档&教程: 
+    - init: documents/doc.md
