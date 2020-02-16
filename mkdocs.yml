@@ -34,7 +34,7 @@ theme:
   language: "zh"
 
   feature:
-    tabs: "true"
+    tabs: "false"
 
 
 # Customization
