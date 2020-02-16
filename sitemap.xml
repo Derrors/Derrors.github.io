@@ -2,7 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://derrors.github.io/derrors-project/</loc>
-     <lastmod>2020-01-26</lastmod>
+     <lastmod>2020-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://derrors.github.io/derrors-project/repositories/fever/</loc>
+     <lastmod>2020-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://derrors.github.io/derrors-project/repositories/nsmn/</loc>
+     <lastmod>2020-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://derrors.github.io/derrors-project/repositories/ffffff/</loc>
+     <lastmod>2020-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://derrors.github.io/derrors-project/repositories/rrc/</loc>
+     <lastmod>2020-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://derrors.github.io/derrors-project/repositories/rpqa/</loc>
+     <lastmod>2020-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://derrors.github.io/derrors-project/repositories/others/</loc>
+     <lastmod>2020-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://derrors.github.io/derrors-project/notes/notes/</loc>
+     <lastmod>2020-02-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://derrors.github.io/derrors-project/documents/doc/</loc>
+     <lastmod>2020-02-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

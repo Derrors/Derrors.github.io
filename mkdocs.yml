@@ -92,3 +92,18 @@ extra_javascript:
 google_analytics:
   - "UA-156919721-1"
   - "auto"
+
+
+# Tags
+nav: 
+  - 主页: index.md
+  - 仓库:
+    - 1. Fact Extraction and Verification:
+      - (1) 任务介绍: repositories/fever.md
+      - (2) FEVER-NSMN: repositories/nsmn.md
+      - (3) FEVER-FFFFFF: repositories/ffffff.md
+    - 2. Review Reading Comprehension: repositories/rrc.md
+    - 3. Reviews & Product & QA: repositories/rpqa.md
+    - 4. Others: repositories/others.md
+  - 笔记: notes/notes.md
+  - 文档&教程: documents/doc.md
