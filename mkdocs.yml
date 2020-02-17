@@ -40,6 +40,8 @@ extra:
   search:
     language: 'en'
 
+  disqus: 'derrors'
+
 
 # Extensions
 markdown_extensions:
