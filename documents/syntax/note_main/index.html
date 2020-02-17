@@ -21,7 +21,7 @@
       
         <meta name="lang:clipboard.copied" content="已复制">
       
-        <meta name="lang:search.language" content="ja">
+        <meta name="lang:search.language" content="jp">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -187,13 +187,16 @@
     <ul class="md-tabs__list">
       
         
-  <li class="md-tabs__item">
-    
-      <a href="../../.." class="md-tabs__link">
-        主页
-      </a>
-    
-  </li>
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../.." class="md-tabs__link">
+          主页
+        </a>
+      
+    </li>
+  
 
       
         
@@ -247,8 +250,6 @@
   
 
       
-        
-      
     </ul>
   </div>
 </nav>
@@ -277,10 +278,46 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../.." title="主页" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
       主页
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        主页
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="介绍" class="md-nav__link">
+      介绍
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../contact/" title="联系方式" class="md-nav__link">
+      联系方式
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -1413,18 +1450,6 @@
   </li>
 
     
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../../contact/" title="联系方式" class="md-nav__link">
-      联系方式
-    </a>
-  </li>
-
-    
   </ul>
 </nav>
                   </div>
@@ -1533,10 +1558,6 @@
           
             
               
-                <script src="../../../assets/javascripts/lunr/tinyseg.js"></script>
-              
-              
-                <script src="../../../assets/javascripts/lunr/lunr.ja.js"></script>
               
             
           

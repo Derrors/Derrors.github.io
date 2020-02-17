@@ -6,6 +6,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://github.com/Derrors/Derrors.github.io/contact/</loc>
+     <lastmod>2020-02-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://github.com/Derrors/Derrors.github.io/nlp/fever/</loc>
      <lastmod>2020-02-17</lastmod>
      <changefreq>daily</changefreq>
@@ -317,11 +322,6 @@
     </url>
     <url>
      <loc>https://github.com/Derrors/Derrors.github.io/documents/syntax/nest_quote_quote_code/</loc>
-     <lastmod>2020-02-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://github.com/Derrors/Derrors.github.io/contact/</loc>
      <lastmod>2020-02-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
