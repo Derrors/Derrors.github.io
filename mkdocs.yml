@@ -1,0 +1,172 @@
+# Project information
+site_name: Derrors' Homepage
+site_description: 
+site_author: derrors
+site_url: https://github.com/Derrors/Derrors.github.io/
+
+
+# Repository
+#repo_name: 'Derrors/Derrors.github.io'
+#repo_url: 'https://github.com/Derrors/Derrors.github.io/'
+
+# Copyright
+copyright: "Copyright &copy; 2019 - 2020 Qinghe Li"
+
+
+theme:
+  name: material
+  palette:
+    primary: 'deep purple'
+    accent: 'deep purple'
+
+  feature:
+    tabs: true
+
+  #font:
+    #text: 'Ubuntu'
+    #code: 'Ubuntu Mono'
+  
+  favicon: 'assets/images/favicon.ico'
+
+  language: 'zh'
+
+
+# Customization
+extra:
+  social:
+    - type: github
+      link: https://github.com/Derrors
+
+  search:
+    language: 'en'
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji: 
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+      #emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      #emoji_generator: !!python/name:pymdownx.emoji.to_png_sprite
+      #emoji_generator: !!python/name:pymdownx.emoji.to_svg_sprite
+      #emoji_generator: !!python/name:pymdownx.emoji.to_awesome
+      #emoji_generator: !!python/name:pymdownx.emoji.to_alt
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+extra_javascript:
+  - 'js/extra.js'
+  - 'js/baidu-tongji.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+
+# Google Analytics
+google_analytics:
+  - "UA-156919721-1"
+  - "auto"
+
+
+nav:
+  - 主页: 
+      - 介绍: index.md
+      - 联系方式: contact.md
+
+  - 自然语言处理:
+      - 1. 事实提取与验证(FEVER):
+          - (1) 任务介绍: nlp/fever.md
+          - (2) FEVER-NSMN: nlp/nsmn.md
+          - (3) FEVER-FFFFFF: nlp/ffffff.md
+      - 2. 评论阅读理解(RRC): nlp/rrc.md
+      - 3. 基于用户评论的商品问答: nlp/rpqa.md
+      - 4. 其他: nlp/others.md
+
+  - 阅读笔记: 
+      - init: notes/notes.md
+
+  - 文档 & 教程: 
+      - Markdown 语法:
+          - 1. 语法总览: documents/syntax/main.md
+          - 2. 标题: documents/syntax/headline.md
+          - 3. 段落: documents/syntax/paragraph.md
+          - 4. 引用: documents/syntax/quote.md
+          - 5. 表格: documents/syntax/table.md
+          - 6. 代码:
+              - 6.1. 行内: documents/syntax/code_inline.md
+              - 6.2. 区块: documents/syntax/code_block.md
+              - 6.3. 高亮: documents/syntax/code_highlight.md
+          - 7. 字体样式:
+              - 7.1. 斜体,粗体,粗斜体: documents/syntax/font_stress.md
+              - 7.2. 上标,下标: documents/syntax/font_updown.md
+              - 7.3. 下划线: documents/syntax/font_underline.md
+              - 7.4. 横线: documents/syntax/font_line.md
+              - 7.5. 下划线+横线: documents/syntax/font_underline_line.md
+          - 8. 列表:
+              - 8.1. 无序列表: documents/syntax/list_noseq.md
+              - 8.2. 有序列表: documents/syntax/list_seq.md
+              - 8.3. 任务列表: documents/syntax/list_task.md
+          - 9. 分割线: documents/syntax/cutline.md
+          - 10. 链接:
+              - 10.1. 普通链接: documents/syntax/link_normal.md
+              - 10.2. 自动链接: documents/syntax/link_auto.md
+              - 10.3. 锚点提示: documents/syntax/link_anchor.md
+          - 11. 图片:
+              - 11.1. 行内式: documents/syntax/image_inline.md
+              - 11.2. 参考式: documents/syntax/image_index.md
+          - 12. 转义: documents/syntax/escape.md
+          - 13. 高亮:
+              - 13.1. 代码高亮: documents/syntax/highlight_code.md
+              - 13.2. 背景高亮: documents/syntax/highlight_background.md
+          - 14. 注解:
+              - 14.1. 介绍: documents/syntax/note_main.md
+              - 14.2. 完整格式: documents/syntax/note_full.md
+              - 14.3. 空标题: documents/syntax/note_empty-title.md
+              - 14.4. 无标题: documents/syntax/note_none-title.md
+              - 14.5. 无类型: documents/syntax/note_none-type.md
+              - 14.6. 折叠: documents/syntax/note_details.md
+              - 14.7. 11种颜色样式: documents/syntax/note_style.md
+              - 14.8. 嵌套: documents/syntax/note_nest.md
+          - 15. 脚注: documents/syntax/footnote.md
+          - 16. 元信息: documents/syntax/meta.md
+          - 17. 数学公式:
+              - 17.1. 介绍: documents/syntax/math_main.md
+              - 17.2. 导入js: documents/syntax/math_js.md
+              - 17.3. 用法: documents/syntax/math_usage.md
+          - 18. emoji:
+              - 18.1. 介绍: documents/syntax/emoji_main.md
+              - 18.2. 工作原理: documents/syntax/emoji_principle.md
+              - 18.3. 最佳实践: documents/syntax/emoji_usage.md
+          - 19. 特殊符号: documents/syntax/symbol.md
+          - 20. 嵌套:
+              - 20.1. 介绍: documents/syntax/nest_main.md
+              - 20.2. 注解-注解: documents/syntax/nest_note_note.md
+              - 20.3. 列表-列表: documents/syntax/nest_list_list.md
+              - 20.4. 引用-引用: documents/syntax/nest_quote_quote.md
+              - 20.5. 注解-代码块: documents/syntax/nest_note_code.md
+              - 20.6. 列表-代码块: documents/syntax/nest_list_code.md
+              - 20.7. 引用-代码块: documents/syntax/nest_quote_code.md
+              - 20.8. 黄色区块-代码: documents/syntax/nest_yellow_code.md
+              - 20.9. 绿色区块-代码: documents/syntax/nest_green_code.md
+              - 20.10. 红色区块-代码: documents/syntax/nest_red_code.md
+              - 20.11. 绿接红区块-代码: documents/syntax/nest_greenred_code.md
+              - 20.12. 注解-列表-引用: documents/syntax/nest_note_list_quote.md
+              - 20.13. 列表-列表-引用: documents/syntax/nest_list_list_quote.md
+              - 20.14. 引用-引用-代码: documents/syntax/nest_quote_quote_code.md
