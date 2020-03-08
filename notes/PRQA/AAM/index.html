@@ -1751,43 +1751,83 @@
 <p><img alt="AAM模型结构" src="../../../img/AAM%E6%A8%A1%E5%9E%8B%E7%BB%93%E6%9E%84.png" /></p>
 <p>它由输入层、属性指示层、属性特定的嵌入层和重构层组成。其中 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 表示输入文本，是一个维度与词表长度 <span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span> 相同的向量；<span><span class="MathJax_Preview">z</span><script type="math/tex">z</script></span> 表示属性指示器， 是一个 <span><span class="MathJax_Preview">L</span><script type="math/tex">L</script></span> 维的向量，每一维代表一个属性；<span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> 表示属性特定的嵌入，维度为 <span><span class="MathJax_Preview">J</span><script type="math/tex">J</script></span>，每个属性都对应着一个特定的嵌入向量；<span><span class="MathJax_Preview">v'</span><script type="math/tex">v'</script></span> 表示重构后的输入，维度与输入的 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 相同；参数矩阵 <span><span class="MathJax_Preview">W</span><script type="math/tex">W</script></span> 和 <span><span class="MathJax_Preview">U</span><script type="math/tex">U</script></span> 都是3阶矩阵。</p>
 <h5 id="_1">学习过程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h5>
-<p>首先，给定一个输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> ，它对于每个属性的相关概率通过一个 <span><span class="MathJax_Preview">softmax</span><script type="math/tex">softmax</script></span> 函数来计算 <br />
-$$
-P(z^l|v) = \frac{exp[-F(v,z<sup>l)]}{\sum_{l</sup><em>}exp[-F(v,z<sup>{l</sup></em>})]}
-$$
-其中<br />
-$$
+<p>首先，给定一个输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> ，它对于每个属性的相关概率通过一个 <span><span class="MathJax_Preview">softmax</span><script type="math/tex">softmax</script></span> 函数来计算   </p>
+<div>
+<div class="MathJax_Preview">
+P(z^l|v) = \frac{exp[-F(v,z^l)]}{\sum_{l^*}exp[-F(v,z^{l^*})]}
+</div>
+<script type="math/tex; mode=display">
+P(z^l|v) = \frac{exp[-F(v,z^l)]}{\sum_{l^*}exp[-F(v,z^{l^*})]}
+</script>
+</div>
+<p>其中  </p>
+<div>
+<div class="MathJax_Preview">
 F(v,z^l) = -∑^J_j log\left[1 + exp\left(\sum^K_k W^l_{kj} v_k + c_j\right)\right] - d^l
-$$
-对于任意所选的属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> , 我们可以计算每个隐层结点的激活概率 <span><span class="MathJax_Preview">h_j</span><script type="math/tex">h_j</script></span><br />
-$$
+</div>
+<script type="math/tex; mode=display">
+F(v,z^l) = -∑^J_j log\left[1 + exp\left(\sum^K_k W^l_{kj} v_k + c_j\right)\right] - d^l
+</script>
+</div>
+<p>对于任意所选的属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> , 我们可以计算每个隐层结点的激活概率 <span><span class="MathJax_Preview">h_j</span><script type="math/tex">h_j</script></span>  </p>
+<div>
+<div class="MathJax_Preview">
 P(h_j|v, z^l) = σ\left(\sum^K_k W^l_{kj} v_k + c_j\right)
-$$
-其中 <span><span class="MathJax_Preview">σ</span><script type="math/tex">σ</script></span> 是 <span><span class="MathJax_Preview">sigmoid</span><script type="math/tex">sigmoid</script></span> 函数.  </p>
-<p>由 <span><span class="MathJax_Preview">P(z^l|v)</span><script type="math/tex">P(z^l|v)</script></span> 计算出的输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 在每个属性上的概率，我们选择概率最大的属性作为优势属性 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> ,可知 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> 是由输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 确定的. 3阶自编码器的编码器利用参数 <span><span class="MathJax_Preview">W^{l_v}_{kj}(∀k, ∀j)</span><script type="math/tex">W^{l_v}_{kj}(∀k, ∀j)</script></span> 来将输入的评论文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 通过计算 <span><span class="MathJax_Preview">P(h_j|v,z^{l_v})</span><script type="math/tex">P(h_j|v,z^{l_v})</script></span> 转换为 属性 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> 的嵌入 <span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> ; 然后解码器利用参数 <span><span class="MathJax_Preview">U^{l_v}</span><script type="math/tex">U^{l_v}</script></span> 来将嵌入 <span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> 重构成输入文本 <span><span class="MathJax_Preview">v'</span><script type="math/tex">v'</script></span> <br />
-$$
-P(v'<em>k|h,z^{l_v}) = σ\left(\sum^J_j U^{l_v}</em>{kj} h_j - b'_k\right)
-$$</p>
+</div>
+<script type="math/tex; mode=display">
+P(h_j|v, z^l) = σ\left(\sum^K_k W^l_{kj} v_k + c_j\right)
+</script>
+</div>
+<p>其中 <span><span class="MathJax_Preview">σ</span><script type="math/tex">σ</script></span> 是 <span><span class="MathJax_Preview">sigmoid</span><script type="math/tex">sigmoid</script></span> 函数.  </p>
+<p>由 <span><span class="MathJax_Preview">P(z^l|v)</span><script type="math/tex">P(z^l|v)</script></span> 计算出的输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 在每个属性上的概率，我们选择概率最大的属性作为优势属性 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> ,可知 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> 是由输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 确定的. 3阶自编码器的编码器利用参数 <span><span class="MathJax_Preview">W^{l_v}_{kj}(∀k, ∀j)</span><script type="math/tex">W^{l_v}_{kj}(∀k, ∀j)</script></span> 来将输入的评论文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 通过计算 <span><span class="MathJax_Preview">P(h_j|v,z^{l_v})</span><script type="math/tex">P(h_j|v,z^{l_v})</script></span> 转换为 属性 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> 的嵌入 <span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> ; 然后解码器利用参数 <span><span class="MathJax_Preview">U^{l_v}</span><script type="math/tex">U^{l_v}</script></span> 来将嵌入 <span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> 重构成输入文本 <span><span class="MathJax_Preview">v'</span><script type="math/tex">v'</script></span>   </p>
+<div>
+<div class="MathJax_Preview">
+P(v'_k|h,z^{l_v}) = σ\left(\sum^J_j U^{l_v}_{kj} h_j - b'_k\right)
+</div>
+<script type="math/tex; mode=display">
+P(v'_k|h,z^{l_v}) = σ\left(\sum^J_j U^{l_v}_{kj} h_j - b'_k\right)
+</script>
+</div>
 <h4 id="23">2.3 答案预测模块<a class="headerlink" href="#23" title="Permanent link">&para;</a></h4>
 <p>答案预测模块(Predictive Answer Model), 目的是利用通过 AMM 训练得到的基于属性的分布和属性特定的嵌入，捕捉问题、评论和相关的答案之间的关系，从而预测新的问题的答案并给出证据(支持性评论).</p>
 <h5 id="_2">答案预测<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
-<p>首先，将给定的问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 作为 AAM 的输入v，计算出问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的属性分布 <span><span class="MathJax_Preview">P(z^l|q)</span><script type="math/tex">P(z^l|q)</script></span> , 同时将整个评论集合 <span><span class="MathJax_Preview">R</span><script type="math/tex">R</script></span> 依据评论的优势属性划分成不同的子集 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span><br />
-$$
-R^l = {r ∈ R | l = argmax_{l^<em>}  P(z<sup>{l</sup></em>}|r)}
-$$
-对于每个属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> , 计算 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 中每条评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 与问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 之间的相关性 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span><br />
-$$
+<p>首先，将给定的问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 作为 AAM 的输入v，计算出问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的属性分布 <span><span class="MathJax_Preview">P(z^l|q)</span><script type="math/tex">P(z^l|q)</script></span> , 同时将整个评论集合 <span><span class="MathJax_Preview">R</span><script type="math/tex">R</script></span> 依据评论的优势属性划分成不同的子集 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span>  </p>
+<div>
+<div class="MathJax_Preview">
+R^l = \{r ∈ R | l = argmax_{l^*} \ P(z^{l^*}|r)\}
+</div>
+<script type="math/tex; mode=display">
+R^l = \{r ∈ R | l = argmax_{l^*} \ P(z^{l^*}|r)\}
+</script>
+</div>
+<p>对于每个属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> , 计算 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 中每条评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 与问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 之间的相关性 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span>  </p>
+<div>
+<div class="MathJax_Preview">
 S^l(q,r) = \frac{cos(z_q, z_r)}{\sum_{r^* ∈ R^l}cos(z_q, z_{r^*})}
-$$
-对于 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 中的每条评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> ，都对问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 计算一次答案为 <span><span class="MathJax_Preview">Yes</span><script type="math/tex">Yes</script></span> 的概率<br />
-$$
+</div>
+<script type="math/tex; mode=display">
+S^l(q,r) = \frac{cos(z_q, z_r)}{\sum_{r^* ∈ R^l}cos(z_q, z_{r^*})}
+</script>
+</div>
+<p>对于 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 中的每条评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> ，都对问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 计算一次答案为 <span><span class="MathJax_Preview">Yes</span><script type="math/tex">Yes</script></span> 的概率  </p>
+<div>
+<div class="MathJax_Preview">
 P^l(Yes|q,r) = σ(h^l_q · M · h^l_r)
-$$
-其中 <span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span> 为参数矩阵.</p>
-<p>最后，对每个属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> 和评论子集 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 进行加权求和，计算问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的最终答案 <span><span class="MathJax_Preview">a^*_q</span><script type="math/tex">a^*_q</script></span><br />
-$$
-P(Yes|q,R) = \sum_{l∈L}P(z<sup>l|q)\sum_{r∈R</sup>l}S<sup>l(q,r)P</sup>l(Yes|q,r)
-$$</p>
+</div>
+<script type="math/tex; mode=display">
+P^l(Yes|q,r) = σ(h^l_q · M · h^l_r)
+</script>
+</div>
+<p>其中 <span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span> 为参数矩阵.</p>
+<p>最后，对每个属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> 和评论子集 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 进行加权求和，计算问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的最终答案 <span><span class="MathJax_Preview">a^*_q</span><script type="math/tex">a^*_q</script></span>   </p>
+<div>
+<div class="MathJax_Preview">
+P(Yes|q,R) = \sum_{l∈L}P(z^l|q)\sum_{r∈R^l}S^l(q,r)P^l(Yes|q,r)
+</div>
+<script type="math/tex; mode=display">
+P(Yes|q,R) = \sum_{l∈L}P(z^l|q)\sum_{r∈R^l}S^l(q,r)P^l(Yes|q,r)
+</script>
+</div>
 <div>
 <div class="MathJax_Preview">
 P(No|q,R) = 1 - P(Yes|q,R)
@@ -1797,15 +1837,24 @@ P(No|q,R) = 1 - P(Yes|q,R)
 </script>
 </div>
 <h5 id="_3">支持性评论<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
-<p>假设问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 预测的最终答案为 <span><span class="MathJax_Preview">a^*_q</span><script type="math/tex">a^*_q</script></span> , 即 <span><span class="MathJax_Preview">a^*_q = argmax_{a∈\{YEs,No\}}\ P(a|q,R)</span><script type="math/tex">a^*_q = argmax_{a∈\{YEs,No\}}\ P(a|q,R)</script></span> , 我们定义可解释性得分函数 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span><br />
-$$
-S<sup>l_{a</sup><em>_q}(q,r) = 
+<p>假设问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 预测的最终答案为 <span><span class="MathJax_Preview">a^*_q</span><script type="math/tex">a^*_q</script></span> , 即 <span><span class="MathJax_Preview">a^*_q = argmax_{a∈\{YEs,No\}}\ P(a|q,R)</span><script type="math/tex">a^*_q = argmax_{a∈\{YEs,No\}}\ P(a|q,R)</script></span> , 我们定义可解释性得分函数 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span>  </p>
+<div>
+<div class="MathJax_Preview">
+S^l_{a^*_q}(q,r) = 
     \begin{cases}
-        S^l(q,r) &amp; P(a^</em>_q|q,r) &gt; &frac12; \
+        S^l(q,r) &amp; P(a^*_q|q,r) &gt; 1/2 \\
         0                &amp; \text{otherwise}
     \end{cases}
-$$
-将每条评论按照 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span> 进行排序，得分较高的评论选作预测答案的证据.</p>
+</div>
+<script type="math/tex; mode=display">
+S^l_{a^*_q}(q,r) = 
+    \begin{cases}
+        S^l(q,r) & P(a^*_q|q,r) > 1/2 \\
+        0                & \text{otherwise}
+    \end{cases}
+</script>
+</div>
+<p>将每条评论按照 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span> 进行排序，得分较高的评论选作预测答案的证据.</p>
 <h3 id="_4">参考文献<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>Qian Yu and Wai Lam. <strong>Review-Aware Answer Prediction for Product-Related Questions Incorporating Aspects.</strong> WSDM 2018. [<a href="https://dl.acm.org/doi/proceedings/10.1145/3159652">paper</a>]</p>
                 
