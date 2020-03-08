@@ -67,7 +67,7 @@ my-project/Docs/index.md			# 主页内容
 
 * site_name
 
-这是**必要的设置**，并且应该是一个字符串，用作项目文档的主要标题。例如：
+这是必要的设置，并且应该是一个字符串，用作项目文档的主要标题。例如：
 
 ```yaml
 site_name: My Docs
@@ -131,12 +131,10 @@ repo_url: https://github.com/example/repository/
 
 !!! info "注意"  
 	对于GitHub或GitLab托管的存储库，`edit_uri` 将自动设置为`edit/master/docs/`（请注意`edit`路径和`master`分支）。   
-	
 	对于由Bitbucket托管的存储库，等效项`edit_uri`将自动设置为`src/default/docs/`（请注意`src`路径和`default` 分支）。   
-	
 	要使用与默认值不同的URI（例如，不同的分支），只需将设置`edit_uri`为所需的字符串。如果您不希望在页面上显示任何“编辑URL链接”，请设置`edit_uri`为空字符串以禁用自动设置。  
 
-!!! warning "注意"  
+!!! warning "注意"    
 	在GitHub和GitLab上，默认的“编辑”路径（`edit/master/docs/`）在在线编辑器中打开页面。此功能要求用户拥有并登录到GitHub / GitLab帐户。否则，用户将被重定向到登录/注册页面。或者，使用“ blob”路径（`blob/master/docs/`）打开一个只读视图，该视图支持匿名访问。
 
 **默认值**：`edit/master/docs/`用于GitHub和GitLab存储库或 `src/default/docs/`Bitbucket存储库（如果`repo_url`与这些域匹配），否则`null`
@@ -155,7 +153,7 @@ repo_url: https://github.com/example/repository/
 
 设置要通过主题包含在文档中的版权信息。例如：
 
-```yaml 
+```yaml   
 copyright: "Copyright &copy; 2019 - 2020 xxxx"
 ```
 
