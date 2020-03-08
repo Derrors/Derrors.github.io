@@ -596,69 +596,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#site_name" class="md-nav__link">
-    site_name
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#site_url" class="md-nav__link">
-    site_url
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#site_description" class="md-nav__link">
-    site_description
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#site_author" class="md-nav__link">
-    site_author
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repo_name" class="md-nav__link">
-    repo_name
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repo_url" class="md-nav__link">
-    repo_url
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit_uri" class="md-nav__link">
-    edit_uri
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docs_dir" class="md-nav__link">
-    docs_dir
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#copyright" class="md-nav__link">
-    copyright
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     配色
   </a>
@@ -1863,69 +1800,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#site_name" class="md-nav__link">
-    site_name
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#site_url" class="md-nav__link">
-    site_url
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#site_description" class="md-nav__link">
-    site_description
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#site_author" class="md-nav__link">
-    site_author
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repo_name" class="md-nav__link">
-    repo_name
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repo_url" class="md-nav__link">
-    repo_url
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit_uri" class="md-nav__link">
-    edit_uri
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docs_dir" class="md-nav__link">
-    docs_dir
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#copyright" class="md-nav__link">
-    copyright
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     配色
   </a>
@@ -2171,7 +2045,7 @@
 </code></pre></div>
 
 <div class="admonition note">
-<p class="admonition-title">注</p>
+<p class="admonition-title">提醒</p>
 <p>在使用 pip 安装前，确保已安装 Python，本文使用的 Python 版本为 Python 3.7.4.</p>
 </div>
 <p>安装完成后，验证 Mkdocs 版本</p>
@@ -2180,9 +2054,9 @@
 </code></pre></div>
 
 <div class="admonition note">
-<p class="admonition-title">注</p>
+<p class="admonition-title">提醒<p>Material requires MkDocs &gt;= 1.0.0.</p>
+</p>
 </div>
-<p>​   Material requires MkDocs &gt;= 1.0.0.</p>
 <h3 id="_2">创建新项目<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>mkdocs new my-project                   <span class="c1"># “my-project”为项目名称，可自定义</span>
 </code></pre></div>
@@ -2194,50 +2068,68 @@ my-project/Docs/index.md            <span class="c1"># 主页内容</span>
 
 <h3 id="yaml">配置 YAML 文件<a class="headerlink" href="#yaml" title="Permanent link">&para;</a></h3>
 <h4 id="_3">项目信息<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
-<h5 id="site_name">site_name<a class="headerlink" href="#site_name" title="Permanent link">&para;</a></h5>
-<p>这是**必需的设置**，并且应该是一个字符串，用作项目文档的主要标题。例如：</p>
+<ul>
+<li>site_name</li>
+</ul>
+<p>这是**必要的设置**，并且应该是一个字符串，用作项目文档的主要标题。例如：</p>
 <div class="codehilite"><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">My Docs</span>
 </code></pre></div>
 
 <p>渲染主题时，此设置将作为<code>site_name</code>上下文变量传递。</p>
-<h5 id="site_url">site_url<a class="headerlink" href="#site_url" title="Permanent link">&para;</a></h5>
+<ul>
+<li>site_url</li>
+</ul>
 <p>设置网站的URL地址。例如：</p>
 <div class="codehilite"><pre><span></span><code><span class="nt">site_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://xxxx.github.io</span>
 </code></pre></div>
 
 <p><strong>默认值</strong>：<code>null</code></p>
-<h5 id="site_description">site_description<a class="headerlink" href="#site_description" title="Permanent link">&para;</a></h5>
+<ul>
+<li>site_description</li>
+</ul>
 <p>设置站点说明，这会将meta标签添加到生成的HTML标头中。</p>
 <p><strong>默认值</strong>：<code>null</code></p>
-<h5 id="site_author">site_author<a class="headerlink" href="#site_author" title="Permanent link">&para;</a></h5>
+<ul>
+<li>site_author</li>
+</ul>
 <p>设置作者的姓名，这会将meta标签添加到生成的HTML标头中。</p>
 <p><strong>默认值：</strong><code>null</code></p>
-<h5 id="repo_name">repo_name<a class="headerlink" href="#repo_name" title="Permanent link">&para;</a></h5>
+<ul>
+<li>repo_name</li>
+</ul>
 <p>存储库名称，设置后在每个页面上提供指向您的存储库的链接的名称。</p>
 <p><strong>默认值</strong>：<code>'GitHub'</code>，<code>'Bitbucket'</code>或者<code>'GitLab'</code>如果<code>repo_url</code>匹配这些域，则为的主机名<code>repo_url</code>。</p>
-<h5 id="repo_url">repo_url<a class="headerlink" href="#repo_url" title="Permanent link">&para;</a></h5>
+<ul>
+<li>repo_url</li>
+</ul>
 <p>存储库地址，设置后在每个页面上提供指向您的存储库（GitHub，Bitbucket，GitLab等）的链接。例如:</p>
 <div class="codehilite"><pre><span></span><code><span class="nt">repo_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/example/repository/</span>
 </code></pre></div>
 
 <p><strong>默认值</strong>：<code>null</code></p>
-<h5 id="edit_uri">edit_uri<a class="headerlink" href="#edit_uri" title="Permanent link">&para;</a></h5>
+<ul>
+<li>edit_uri</li>
+</ul>
 <p>在线编辑路径，设置后，直接提供一个链接到源存储库中的页面。这使查找和编辑页面源变得更加容易。如果<code>repo_url</code>未设置，则忽略此选项。</p>
 <div class="admonition info">
 <p class="admonition-title">注意</p>
-<p>对于GitHub或GitLab托管的存储库，<code>edit_uri</code> 将自动设置为<code>edit/master/docs/</code>（请注意<code>edit</code>路径和<code>master</code>分支）。</p>
+<p>对于GitHub或GitLab托管的存储库，<code>edit_uri</code> 将自动设置为<code>edit/master/docs/</code>（请注意<code>edit</code>路径和<code>master</code>分支）。   </p>
+<p>对于由Bitbucket托管的存储库，等效项<code>edit_uri</code>将自动设置为<code>src/default/docs/</code>（请注意<code>src</code>路径和<code>default</code> 分支）。   </p>
+<p>要使用与默认值不同的URI（例如，不同的分支），只需将设置<code>edit_uri</code>为所需的字符串。如果您不希望在页面上显示任何“编辑URL链接”，请设置<code>edit_uri</code>为空字符串以禁用自动设置。  </p>
 </div>
-<p>​   对于由Bitbucket托管的存储库，等效项<code>edit_uri</code>将自动设置为<code>src/default/docs/</code>（请注意<code>src</code>路径和<code>default</code> 分支）。</p>
-<p>​   要使用与默认值不同的URI（例如，不同的分支），只需将设置<code>edit_uri</code>为所需的字符串。如果您不希望在页面上显示任何“编辑URL链接”，请设置<code>edit_uri</code>为空字符串以禁用自动设置。</p>
 <div class="admonition warning">
 <p class="admonition-title">注意</p>
+<p>在GitHub和GitLab上，默认的“编辑”路径（<code>edit/master/docs/</code>）在在线编辑器中打开页面。此功能要求用户拥有并登录到GitHub / GitLab帐户。否则，用户将被重定向到登录/注册页面。或者，使用“ blob”路径（<code>blob/master/docs/</code>）打开一个只读视图，该视图支持匿名访问。</p>
 </div>
-<p>​   在GitHub和GitLab上，默认的“编辑”路径（<code>edit/master/docs/</code>）在在线编辑器中打开页面。此功能要求用户拥有并登录到GitHub / GitLab帐户。否则，用户将被重定向到登录/注册页面。或者，使用“ blob”路径（<code>blob/master/docs/</code>）打开一个只读视图，该视图支持匿名访问。</p>
 <p><strong>默认值</strong>：<code>edit/master/docs/</code>用于GitHub和GitLab存储库或 <code>src/default/docs/</code>Bitbucket存储库（如果<code>repo_url</code>与这些域匹配），否则<code>null</code></p>
-<h5 id="docs_dir">docs_dir<a class="headerlink" href="#docs_dir" title="Permanent link">&para;</a></h5>
+<ul>
+<li>docs_dir</li>
+</ul>
 <p>包含文档源markdown文件的目录。它可以是相对目录，在这种情况下，它是相对于包含您的配置文件的目录来解析的，或者可以是从本地文件系统根目录开始的绝对目录路径。</p>
 <p><strong>默认值</strong>：<code>'docs'</code></p>
-<h5 id="copyright">copyright<a class="headerlink" href="#copyright" title="Permanent link">&para;</a></h5>
+<ul>
+<li>copyright</li>
+</ul>
 <p>设置要通过主题包含在文档中的版权信息。例如：</p>
 <p>```yaml 
 copyright: "Copyright &copy; 2019 - 2020 xxxx"
@@ -2300,7 +2192,6 @@ theme:
 <th align="left">Available languages</th>
 <th></th>
 <th></th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -2308,67 +2199,71 @@ theme:
 <td align="left"><code>af</code> / Afrikaans</td>
 <td><code>ar</code> / Arabic</td>
 <td><code>ca</code> / Catalan</td>
-<td><code>cs</code> / Czech</td>
+</tr>
+<tr>
+<td align="left"><code>cs</code> / Czech</td>
+<td><code>et</code> / Estonian</td>
+<td><code>de</code> / German</td>
+</tr>
+<tr>
+<td align="left"><code>hr</code> / Croatian</td>
+<td><code>ja</code> / Japanese</td>
+<td><code>ro</code> / Romanian</td>
 </tr>
 <tr>
 <td align="left"><code>da</code> / Danish</td>
 <td><code>nl</code> / Dutch</td>
 <td><code>en</code> / English</td>
-<td><code>et</code> / Estonian</td>
 </tr>
 <tr>
 <td align="left"><code>fi</code> / Finnish</td>
 <td><code>fr</code> / French</td>
 <td><code>gl</code> / Galician</td>
-<td><code>de</code> / German</td>
 </tr>
 <tr>
 <td align="left"><code>gr</code> / Greek</td>
 <td><code>he</code> / Hebrew</td>
 <td><code>hi</code> / Hindi</td>
-<td><code>hr</code> / Croatian</td>
 </tr>
 <tr>
 <td align="left"><code>hu</code> / Hungarian</td>
 <td><code>id</code> / Indonesian</td>
 <td><code>it</code> / Italian</td>
-<td><code>ja</code> / Japanese</td>
 </tr>
 <tr>
 <td align="left"><code>kr</code> / Korean</td>
 <td><code>no</code> / Norwegian</td>
-<td><code>nn</code> / Norwegian (Nynorsk)</td>
-<td></td>
+<td><code>nn</code> / Norwegian</td>
 </tr>
 <tr>
 <td align="left"><code>fa</code> / Persian</td>
 <td><code>pl</code> / Polish</td>
 <td><code>pt</code> / Portugese</td>
-<td><code>ro</code> / Romanian</td>
 </tr>
 <tr>
 <td align="left"><code>ru</code> / Russian</td>
 <td><code>sr</code> / Serbian</td>
 <td><code>sh</code> / Serbo-Croatian</td>
-<td><code>sk</code> / Slovak</td>
+</tr>
+<tr>
+<td align="left"><code>sk</code> / Slovak</td>
+<td><code>th</code> / Thai</td>
+<td><code>vi</code> / Vietnamese</td>
 </tr>
 <tr>
 <td align="left"><code>si</code> / Slovenian</td>
 <td><code>es</code> / Spanish</td>
 <td><code>sv</code> / Swedish</td>
-<td><code>th</code> / Thai</td>
 </tr>
 <tr>
 <td align="left"><code>tr</code> / Turkish</td>
 <td><code>uk</code> / Ukrainian</td>
-<td><code>vi</code> / Vietnamese</td>
-<td></td>
+<td><code>zh</code> / Chinese (Simplified)</td>
 </tr>
 <tr>
-<td align="left"><code>zh</code> / Chinese (Simplified)</td>
-<td><code>zh-Hant</code> / Chinese (Traditional)</td>
-<td><code>zh-TW</code> / Chinese (Taiwanese)</td>
+<td align="left"><code>zh-TW</code> / Chinese (Taiwanese)</td>
 <td></td>
+<td><code>zh-Hant</code> / Chinese (Traditional)</td>
 </tr>
 </tbody>
 </table>
@@ -2403,8 +2298,8 @@ theme:
 <p><strong>默认值</strong>：<code>fasle</code></p>
 <div class="admonition info">
 <p class="admonition-title">注意</p>
+<p>启用标签页后，<em>顶层区域*将在标题正下方的附加层中呈现。左侧的导航将仅包含所选部分中包含的页面。此外，在项目的内部定义的*顶级页面</em><code>mkdocs.yml</code>将被分组在第一个选项卡下，该选项卡将接收第一页的标题。</p>
 </div>
-<p>​   启用标签页后，<em>顶层区域*将在标题正下方的附加层中呈现。左侧的导航将仅包含所选部分中包含的页面。此外，在项目的内部定义的*顶级页面</em><code>mkdocs.yml</code>将被分组在第一个选项卡下，该选项卡将接收第一页的标题。</p>
 <h5 id="_11">导航栏<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h5>
 <p>用于确定站点的全局导航的格式和布局。最简单的导航配置如下所示：</p>
 <div class="codehilite"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
@@ -2414,8 +2309,8 @@ theme:
 
 <div class="admonition info">
 <p class="admonition-title">注意</p>
+<p>导航配置中的所有路径都必须相对于<code>docs_dir</code> 配置选项。如果该选项设置为默认值，<code>docs</code>则上述配置的源文件将位于<code>docs/index.md</code>和 <code>docs/about.md</code>。</p>
 </div>
-<p>​   导航配置中的所有路径都必须相对于<code>docs_dir</code> 配置选项。如果该选项设置为默认值，<code>docs</code>则上述配置的源文件将位于<code>docs/index.md</code>和 <code>docs/about.md</code>。</p>
 <p>上面的示例将导致在顶层创建两个导航项，并根据Markdown文件的内容（如果在文件中未定义标题的话）从文件名推断其标题。要覆盖<code>nav</code>设置中的标题，请在文件名之前添加一个标题：</p>
 <div class="codehilite"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="nt">Home</span><span class="p">:</span> <span class="s">&#39;index.md&#39;</span>
@@ -2424,8 +2319,8 @@ theme:
 
 <div class="admonition info">
 <p class="admonition-title">注意</p>
+<p>如果在导航中为页面定义了标题，则该标题将在该页面的整个站点中使用，并将覆盖页面本身内定义的任何标题。</p>
 </div>
-<p>​   如果在导航中为页面定义了标题，则该标题将在该页面的整个站点中使用，并将覆盖页面本身内定义的任何标题。</p>
 <p>可以通过在部分标题下列出相关页面来创建导航子部分。例如：</p>
 <div class="codehilite"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="nt">Home</span><span class="p">:</span> <span class="s">&#39;index.md&#39;</span>
@@ -2450,7 +2345,7 @@ theme:
 <table>
 <thead>
 <tr>
-<th align="left">Available language stemmers</th>
+<th align="left">Available language</th>
 <th></th>
 <th></th>
 <th></th>
@@ -2491,8 +2386,8 @@ theme:
 
 <div class="admonition info">
 <p class="admonition-title">注意</p>
+<p>目前，Lunr语言不支持中文或其他亚洲语言。但是，实践证明，可使用日语来搜索中文。</p>
 </div>
-<p>​   目前，Lunr语言不支持中文或其他亚洲语言。但是，实践证明，可使用日语来搜索中文。</p>
 <h5 id="_14">社交关系<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h5>
 <p>在文档的页脚中链接社交帐户。<code>type</code>必须表示类型，例如<code>github</code>，<code>twitter</code>或者<code>linkedin</code>，<code>link</code>必须包含要链接的网址，例如：</p>
 <div class="codehilite"><pre><span></span><code><span class="nt">extra</span><span class="p">:</span>
@@ -2520,12 +2415,12 @@ theme:
 
 <div class="admonition info">
 <p class="admonition-title">注意</p>
+<p>除了索引页面之外，所有页面上都会插入注释部分。此外，将在目录底部生成一个新条目，该条目链接到注释部分。</p>
 </div>
-<p>​   除了索引页面之外，所有页面上都会插入注释部分。此外，将在目录底部生成一个新条目，该条目链接到注释部分。</p>
 <div class="admonition info">
 <p class="admonition-title">前提</p>
+<p><code>site_url</code>必须设置值，以使Disqus集成正确加载。</p>
 </div>
-<p>​   <code>site_url</code>必须设置值，以使Disqus集成正确加载。</p>
 <p>也可以使用在 markdown_extensions 安装 meta 为特定页面启用或禁用 Disqus (下述)。</p>
 <h5 id="markdown">Markdown扩展<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h5>
 <p>MkDocs页面必须使用<a href="https://daringfireball.net/projects/markdown/">Markdown</a>写作，Markdown是一种轻量级的标记语言，它导致易于阅读，易于编写的纯文本文档，并且可以以可预测的方式转换为有效的HTML文档。</p>
@@ -2571,11 +2466,11 @@ theme:
 
 <h3 id="_17">开发服务器<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <p>MkDocs包含一个开发服务器，因此可以随时在本地进行浏览、更改。</p>
-<p>在 mkdocs.yml 同一路径下，使用以下命令启动开发服务器：</p>
+<p>在 mkdocs.yml 同一路径下，使用以下命令启动开发服务器：  </p>
 <div class="codehilite"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mkdocs serve</span>
 </code></pre></div>
 
-<p>现在，可以将浏览器中输入地址 <a href="http://localhost:8000/">http://localhost:8000</a>，来预览网页效果。</p>
+<p>现在，可以将浏览器中输入地址 <a href="http://localhost:8000/">http://localhost:8000</a>, 来预览网页效果。</p>
 <h3 id="_18">生成网页<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
 <p>在 mkdocs.yml 同一路径下，使用以下命令依据 mkdocs.yml 配置文件，生成网页：</p>
 <div class="codehilite"><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">mkdocs build</span>

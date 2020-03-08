@@ -31,8 +31,8 @@
 pip install mkdocs mkdocs-material
 ```
 
-!!! note "注"
-    在使用 pip 安装前，确保已安装 Python，本文使用的 Python 版本为 Python 3.7.4.
+!!! note "提醒"  
+	在使用 pip 安装前，确保已安装 Python，本文使用的 Python 版本为 Python 3.7.4.
 
 安装完成后，验证 Mkdocs 版本
 
@@ -41,9 +41,8 @@ mkdocs --version
 # mkdocs, version 1.1
 ```
 
-!!! note "注"
-
-​	Material requires MkDocs >= 1.0.0.
+!!! note "提醒"  
+		Material requires MkDocs >= 1.0.0.
 
 
 
@@ -66,9 +65,9 @@ my-project/Docs/index.md			# 主页内容
 
 #### 项目信息
 
-##### site_name
+* site_name
 
-这是**必需的设置**，并且应该是一个字符串，用作项目文档的主要标题。例如：
+这是**必要的设置**，并且应该是一个字符串，用作项目文档的主要标题。例如：
 
 ```yaml
 site_name: My Docs
@@ -78,7 +77,7 @@ site_name: My Docs
 
 
 
-##### site_url
+* site_url
 
 设置网站的URL地址。例如：
 
@@ -90,7 +89,7 @@ site_url: https://xxxx.github.io
 
 
 
-##### site_description
+* site_description
 
 设置站点说明，这会将meta标签添加到生成的HTML标头中。
 
@@ -98,7 +97,7 @@ site_url: https://xxxx.github.io
 
 
 
-##### site_author
+* site_author
 
 设置作者的姓名，这会将meta标签添加到生成的HTML标头中。
 
@@ -106,7 +105,7 @@ site_url: https://xxxx.github.io
 
 
 
-##### repo_name
+* repo_name
 
 存储库名称，设置后在每个页面上提供指向您的存储库的链接的名称。
 
@@ -114,7 +113,7 @@ site_url: https://xxxx.github.io
 
 
 
-##### repo_url
+* repo_url
 
 存储库地址，设置后在每个页面上提供指向您的存储库（GitHub，Bitbucket，GitLab等）的链接。例如:
 
@@ -126,26 +125,25 @@ repo_url: https://github.com/example/repository/
 
 
 
-##### edit_uri
+* edit_uri
 
 在线编辑路径，设置后，直接提供一个链接到源存储库中的页面。这使查找和编辑页面源变得更加容易。如果`repo_url`未设置，则忽略此选项。
 
-!!! info "注意"
-    对于GitHub或GitLab托管的存储库，`edit_uri` 将自动设置为`edit/master/docs/`（请注意`edit`路径和`master`分支）。
+!!! info "注意"  
+	对于GitHub或GitLab托管的存储库，`edit_uri` 将自动设置为`edit/master/docs/`（请注意`edit`路径和`master`分支）。   
+	
+	对于由Bitbucket托管的存储库，等效项`edit_uri`将自动设置为`src/default/docs/`（请注意`src`路径和`default` 分支）。   
+	
+	要使用与默认值不同的URI（例如，不同的分支），只需将设置`edit_uri`为所需的字符串。如果您不希望在页面上显示任何“编辑URL链接”，请设置`edit_uri`为空字符串以禁用自动设置。  
 
-​	对于由Bitbucket托管的存储库，等效项`edit_uri`将自动设置为`src/default/docs/`（请注意`src`路径和`default` 分支）。
-
-​	要使用与默认值不同的URI（例如，不同的分支），只需将设置`edit_uri`为所需的字符串。如果您不希望在页面上显示任何“编辑URL链接”，请设置`edit_uri`为空字符串以禁用自动设置。
-
-!!! warning "注意"
-
-​	在GitHub和GitLab上，默认的“编辑”路径（`edit/master/docs/`）在在线编辑器中打开页面。此功能要求用户拥有并登录到GitHub / GitLab帐户。否则，用户将被重定向到登录/注册页面。或者，使用“ blob”路径（`blob/master/docs/`）打开一个只读视图，该视图支持匿名访问。
+!!! warning "注意"  
+	在GitHub和GitLab上，默认的“编辑”路径（`edit/master/docs/`）在在线编辑器中打开页面。此功能要求用户拥有并登录到GitHub / GitLab帐户。否则，用户将被重定向到登录/注册页面。或者，使用“ blob”路径（`blob/master/docs/`）打开一个只读视图，该视图支持匿名访问。
 
 **默认值**：`edit/master/docs/`用于GitHub和GitLab存储库或 `src/default/docs/`Bitbucket存储库（如果`repo_url`与这些域匹配），否则`null`
 
 
 
-##### docs_dir
+* docs_dir
 
 包含文档源markdown文件的目录。它可以是相对目录，在这种情况下，它是相对于包含您的配置文件的目录来解析的，或者可以是从本地文件系统根目录开始的绝对目录路径。
 
@@ -153,7 +151,7 @@ repo_url: https://github.com/example/repository/
 
 
 
-##### copyright
+* copyright
 
 设置要通过主题包含在文档中的版权信息。例如：
 
@@ -246,19 +244,22 @@ theme:
 
 material for mkdocs 支持国际化（i18n），并提供以下语言的所有模板变量和标签的翻译：
 
-| Available languages         |                                   |                               |                 |
-| :-------------------------- | --------------------------------- | ----------------------------- | --------------- |
-| `af` / Afrikaans            | `ar` / Arabic                     | `ca` / Catalan                | `cs` / Czech    |
-| `da` / Danish               | `nl` / Dutch                      | `en` / English                | `et` / Estonian |
-| `fi` / Finnish              | `fr` / French                     | `gl` / Galician               | `de` / German   |
-| `gr` / Greek                | `he` / Hebrew                     | `hi` / Hindi                  | `hr` / Croatian |
-| `hu` / Hungarian            | `id` / Indonesian                 | `it` / Italian                | `ja` / Japanese |
-| `kr` / Korean               | `no` / Norwegian                  | `nn` / Norwegian (Nynorsk)    |                 |
-| `fa` / Persian              | `pl` / Polish                     | `pt` / Portugese              | `ro` / Romanian |
-| `ru` / Russian              | `sr` / Serbian                    | `sh` / Serbo-Croatian         | `sk` / Slovak   |
-| `si` / Slovenian            | `es` / Spanish                    | `sv` / Swedish                | `th` / Thai     |
-| `tr` / Turkish              | `uk` / Ukrainian                  | `vi` / Vietnamese             |                 |
-| `zh` / Chinese (Simplified) | `zh-Hant` / Chinese (Traditional) | `zh-TW` / Chinese (Taiwanese) |                 |
+| Available languages           |                   |                                   |
+| :---------------------------- | ----------------- | --------------------------------- |
+| `af` / Afrikaans              | `ar` / Arabic     | `ca` / Catalan                    |
+| `cs` / Czech                  | `et` / Estonian   | `de` / German                     |
+| `hr` / Croatian               | `ja` / Japanese   | `ro` / Romanian                   |
+| `da` / Danish                 | `nl` / Dutch      | `en` / English                    |
+| `fi` / Finnish                | `fr` / French     | `gl` / Galician                   |
+| `gr` / Greek                  | `he` / Hebrew     | `hi` / Hindi                      |
+| `hu` / Hungarian              | `id` / Indonesian | `it` / Italian                    |
+| `kr` / Korean                 | `no` / Norwegian  | `nn` / Norwegian                  |
+| `fa` / Persian                | `pl` / Polish     | `pt` / Portugese                  |
+| `ru` / Russian                | `sr` / Serbian    | `sh` / Serbo-Croatian             |
+| `sk` / Slovak                 | `th` / Thai       | `vi` / Vietnamese                 |
+| `si` / Slovenian              | `es` / Spanish    | `sv` / Swedish                    |
+| `tr` / Turkish                | `uk` / Ukrainian  | `zh` / Chinese (Simplified)       |
+| `zh-TW` / Chinese (Taiwanese) |                   | `zh-Hant` / Chinese (Traditional) |
 
 
 
@@ -309,9 +310,8 @@ theme:
 
 **默认值**：`fasle`
 
-!!! info "注意"
-
-​	启用标签页后，*顶层区域*将在标题正下方的附加层中呈现。左侧的导航将仅包含所选部分中包含的页面。此外，在项目的内部定义的*顶级页面*`mkdocs.yml`将被分组在第一个选项卡下，该选项卡将接收第一页的标题。
+!!! info "注意"  
+	启用标签页后，*顶层区域*将在标题正下方的附加层中呈现。左侧的导航将仅包含所选部分中包含的页面。此外，在项目的内部定义的*顶级页面*`mkdocs.yml`将被分组在第一个选项卡下，该选项卡将接收第一页的标题。
 
 
 
@@ -325,9 +325,8 @@ nav:
     - 'about.md'
 ```
 
-!!! info "注意"
-
-​	导航配置中的所有路径都必须相对于`docs_dir` 配置选项。如果该选项设置为默认值，`docs`则上述配置的源文件将位于`docs/index.md`和 `docs/about.md`。
+!!! info "注意"  
+	导航配置中的所有路径都必须相对于`docs_dir` 配置选项。如果该选项设置为默认值，`docs`则上述配置的源文件将位于`docs/index.md`和 `docs/about.md`。
 
 上面的示例将导致在顶层创建两个导航项，并根据Markdown文件的内容（如果在文件中未定义标题的话）从文件名推断其标题。要覆盖`nav`设置中的标题，请在文件名之前添加一个标题：
 
@@ -337,9 +336,8 @@ nav:
     - About: 'about.md'
 ```
 
-!!! info "注意"
-
-​	如果在导航中为页面定义了标题，则该标题将在该页面的整个站点中使用，并将覆盖页面本身内定义的任何标题。
+!!! info "注意"  
+	如果在导航中为页面定义了标题，则该标题将在该页面的整个站点中使用，并将覆盖页面本身内定义的任何标题。
 
 可以通过在部分标题下列出相关页面来创建导航子部分。例如：
 
@@ -372,7 +370,7 @@ extra:
 
 网站搜索目前支持以下语言：
 
-| Available language stemmers |                  |                  |                 |
+| Available language |                  |                  |                 |
 | :-------------------------- | ---------------- | ---------------- | --------------- |
 | `da` / Danish               | `du` / Dutch     | `en` / English   | `fi` / Finnish  |
 | `fr` / French               | `de` / German    | `hu` / Hungarian | `it` / Italian  |
@@ -387,9 +385,8 @@ extra:
     tokenizer: '[\s\-\.]+'
 ```
 
-!!! info "注意"
-
-​	目前，Lunr语言不支持中文或其他亚洲语言。但是，实践证明，可使用日语来搜索中文。
+!!! info "注意"  
+	目前，Lunr语言不支持中文或其他亚洲语言。但是，实践证明，可使用日语来搜索中文。
 
 
 
@@ -431,13 +428,11 @@ extra:
   disqus: 'your-shortname'
 ```
 
-!!! info "注意"
+!!! info "注意"  
+	除了索引页面之外，所有页面上都会插入注释部分。此外，将在目录底部生成一个新条目，该条目链接到注释部分。
 
-​	除了索引页面之外，所有页面上都会插入注释部分。此外，将在目录底部生成一个新条目，该条目链接到注释部分。
-
-!!! info "前提"
-
-​	`site_url`必须设置值，以使Disqus集成正确加载。
+!!! info "前提"  
+	`site_url`必须设置值，以使Disqus集成正确加载。
 
 也可以使用在 markdown_extensions 安装 meta 为特定页面启用或禁用 Disqus (下述)。
 
@@ -449,7 +444,7 @@ MkDocs页面必须使用[Markdown](https://daringfireball.net/projects/markdown/
 
 MkDocs使用[Python-Markdown](https://python-markdown.github.io/)库将Markdown文档呈现为HTML。除了在所有Markdown实现中通用的 [基本Markdown语法](https://daringfireball.net/projects/markdown/syntax)，MkDocs还支持通过 [Python-Markdown扩展](https://python-markdown.github.io/extensions/) 语法。建议默认启用以下扩展：
 
-```YAML
+```yaml
 markdown_extensions:
 	- admonition												# 注解块支持
   - pymdownx.arithmatex								# 数学公式的TeX语法支持
@@ -482,13 +477,13 @@ extra_javascript:
 
   元数据在Markdown文档的开头以一系列键值对的形式编写，并由结束元数据上下文的空白行分隔。
 
-  ```yaml
-  # 可以在每个文档启用Disqus：
-  disqus: your-shortname
+```yaml
+# 可以在每个文档启用Disqus：
+disqus: your-shortname
   
-  # 可以通过将特定页面设置为空值来禁用Disqus：
-  disqus:
-  ```
+# 可以通过将特定页面设置为空值来禁用Disqus：
+disqus:
+```
 
   
 
@@ -496,14 +491,13 @@ extra_javascript:
 
 MkDocs包含一个开发服务器，因此可以随时在本地进行浏览、更改。
 
-在 mkdocs.yml 同一路径下，使用以下命令启动开发服务器：
+在 mkdocs.yml 同一路径下，使用以下命令启动开发服务器：  
 
 ```yaml
 mkdocs serve
 ```
 
-现在，可以将浏览器中输入地址 [http://localhost:8000](http://localhost:8000/)，来预览网页效果。
-
+现在，可以将浏览器中输入地址 [http://localhost:8000](http://localhost:8000/), 来预览网页效果。
 
 
 ### 生成网页
