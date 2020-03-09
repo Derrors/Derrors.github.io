@@ -1,4 +1,4 @@
-# Review-Aware Answer Prediction for Product-Related Questions Incorporating Aspects
+## Review-Aware Answer Prediction for Product-Related Questions Incorporating Aspects
 
 ### 1 问题定义
 
@@ -20,9 +20,7 @@
 
 AAM 由一个 3-阶自编码器构成，其结构如图所示：
 
-![AAM模型结构](../../img/AAM模型结构.png)
-
-
+<img src="../img/AAM模型结构.png" alt="AAM模型结构" style="zoom:35%;" />
 
 它由输入层、属性指示层、属性特定的嵌入层和重构层组成。其中 $v$ 表示输入文本，是一个维度与词表长度 $K$ 相同的向量；$z$ 表示属性指示器， 是一个 $L$ 维的向量，每一维代表一个属性；$h$ 表示属性特定的嵌入，维度为 $J$，每个属性都对应着一个特定的嵌入向量；$v'$ 表示重构后的输入，维度与输入的 $v$ 相同；参数矩阵 $W$ 和 $U$ 都是3阶矩阵。
 
