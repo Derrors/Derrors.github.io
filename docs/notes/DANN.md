@@ -16,7 +16,7 @@
 
 DANN 模型的结构如下图所示。
 
-<img src="../../../img/DANN模型结构.png" alt="DANN" style="zoom:30%;" />
+<img src="../../img/DANN模型结构.png" alt="DANN" style="zoom:30%;" />
 
 #### 2.2 细节实现
 

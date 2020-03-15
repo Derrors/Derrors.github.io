@@ -24,7 +24,7 @@ QA 辅助任务，目的是学习问题焦点和答案模式的映射关系。�
 
 QA task 包含 Q-Net 和 A-Net，其结构如下
 
-<img src="../../../img/QA-Net.png" alt="QA-Net" style="zoom:40%;" />
+<img src="../../img/QA-Net.png" alt="QA-Net" style="zoom:40%;" />
 
 ##### 文本编码
 
@@ -51,7 +51,7 @@ $$
 
 在 QA task 中，使用双向注意力机制来提取问题焦点和答案模式，如图所示。
 
-<img src="../../../img/bi-attention.png" alt="bi-attention" style="zoom:35%;" />
+<img src="../../img/bi-attention.png" alt="bi-attention" style="zoom:35%;" />
 
 首先，计算 $\text{H}^Q$ 和 $\text{H}^A$ 的相似矩阵 $\text{G}$
 
@@ -106,7 +106,7 @@ QR 主任务，目的是在预训练的 QA-Net 上使用集合 $S^{qa} = \{(Q,A,
 
 QR task 除包含 QA task 的 Q-Net 和 A-Net 外，还包含 R-Net，其结构如下
 
-<img src="../../../img/QAR-Net.png" alt="QAR-Net" style="zoom:40%;" />
+<img src="../../img/QAR-Net.png" alt="QAR-Net" style="zoom:40%;" />
 
 在 QR task 中，模型左侧的 QA-Net 只需将 A-Net 的输入变为评论 R，按 QA task 相同的处理方式依次进行文本编码、注意力池化和融合过程，得到 $u^{QR}$。对于右侧的 R-Net 处理方式如下。
 

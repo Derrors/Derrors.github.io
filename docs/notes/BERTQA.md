@@ -14,7 +14,7 @@
 
 NNQA 和 BERTQA 的模型结构如下图所示。
 
-<img src="../../../img/NNQA&BERTQA.png" alt="BERTQA" style="zoom:48%;" />
+<img src="../../img/NNQA&BERTQA.png" alt="BERTQA" style="zoom:48%;" />
 
 #### 2.2 细节实现
 
