@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://derrors.github.io/notes/PRQA/AAM/">
+        <link rel="canonical" href="https://derrors.github.io/notes/PRQA/NRA/">
       
       
         <meta name="author" content="derrors">
@@ -40,7 +40,7 @@
     
     
       
-        <title>AAM - Derrors' Homepage</title>
+        <title>NRA - Derrors' Homepage</title>
       
     
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#review-aware-answer-prediction-for-product-related-questions-incorporating-aspects" tabindex="0" class="md-skip">
+      <a href="#reading-customer-reviews-to-answer-product-related-questions" tabindex="0" class="md-skip">
         跳转至
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                AAM
+                NRA
               
             </span>
           
@@ -231,7 +231,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../AAM/" class="md-tabs__link md-tabs__link--active">
           阅读笔记
         </a>
       
@@ -491,6 +491,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../AAM/" title="AAM" class="md-nav__link">
+      AAM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -500,11 +512,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        AAM
+        NRA
       </label>
     
-    <a href="./" title="AAM" class="md-nav__link md-nav__link--active">
-      AAM
+    <a href="./" title="NRA" class="md-nav__link md-nav__link--active">
+      NRA
     </a>
     
       
@@ -516,8 +528,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#review-aware-answer-prediction-for-product-related-questions-incorporating-aspects" class="md-nav__link">
-    Review-Aware Answer Prediction for Product-Related Questions Incorporating Aspects
+  <a href="#reading-customer-reviews-to-answer-product-related-questions" class="md-nav__link">
+    Reading Customer Reviews to Answer Product-related Questions
   </a>
   
     <nav class="md-nav">
@@ -547,49 +559,36 @@
         
           <li class="md-nav__item">
   <a href="#22" class="md-nav__link">
-    2.2 属性分析模块
+    2.2 细节实现
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aam" class="md-nav__link">
-    AAM 模型结构
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    学习过程
+    混合词嵌入
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    2.3 答案预测模块
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    答案预测
+    产品相关的问题阅读
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    支持性评论
+    带有问题的多条评论阅读
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    神经元投票用于答案预测
   </a>
   
 </li>
@@ -605,7 +604,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     参考文献
   </a>
   
@@ -630,18 +629,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../NRA/" title="NRA" class="md-nav__link">
-      NRA
-    </a>
   </li>
 
         
@@ -1682,8 +1669,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#review-aware-answer-prediction-for-product-related-questions-incorporating-aspects" class="md-nav__link">
-    Review-Aware Answer Prediction for Product-Related Questions Incorporating Aspects
+  <a href="#reading-customer-reviews-to-answer-product-related-questions" class="md-nav__link">
+    Reading Customer Reviews to Answer Product-related Questions
   </a>
   
     <nav class="md-nav">
@@ -1713,49 +1700,36 @@
         
           <li class="md-nav__item">
   <a href="#22" class="md-nav__link">
-    2.2 属性分析模块
+    2.2 细节实现
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aam" class="md-nav__link">
-    AAM 模型结构
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    学习过程
+    混合词嵌入
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    2.3 答案预测模块
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    答案预测
+    产品相关的问题阅读
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    支持性评论
+    带有问题的多条评论阅读
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    神经元投票用于答案预测
   </a>
   
 </li>
@@ -1771,7 +1745,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     参考文献
   </a>
   
@@ -1805,128 +1779,191 @@
               
                 
                 
-                  <h1>AAM</h1>
+                  <h1>NRA</h1>
                 
-                <h2 id="review-aware-answer-prediction-for-product-related-questions-incorporating-aspects">Review-Aware Answer Prediction for Product-Related Questions Incorporating Aspects<a class="headerlink" href="#review-aware-answer-prediction-for-product-related-questions-incorporating-aspects" title="Permanent link">&para;</a></h2>
+                <h2 id="reading-customer-reviews-to-answer-product-related-questions">Reading Customer Reviews to Answer Product-related Questions<a class="headerlink" href="#reading-customer-reviews-to-answer-product-related-questions" title="Permanent link">&para;</a></h2>
 <h3 id="1">1 问题定义<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<p>对于一个特定的产品，用 <span><span class="MathJax_Preview">Q</span><script type="math/tex">Q</script></span> 来表示该产品一系列的 “<span><span class="MathJax_Preview">Yes-No</span><script type="math/tex">Yes-No</script></span>" 类型的问题，用 <span><span class="MathJax_Preview">a \in \{Yes, No\}</span><script type="math/tex">a \in \{Yes, No\}</script></span> 来表示每个问题 <span><span class="MathJax_Preview">q ∈ Q</span><script type="math/tex">q ∈ Q</script></span> 的答案，用 <span><span class="MathJax_Preview">R</span><script type="math/tex">R</script></span> 来表示该产品相关的所有评论的集合；基于已有的问题-答案对 <span><span class="MathJax_Preview">Q-A</span><script type="math/tex">Q-A</script></span>  和评论 <span><span class="MathJax_Preview">R</span><script type="math/tex">R</script></span>，在提出新的问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 时，来预测答案 <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> ，同时给出支持该答案 <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> 的评论 。</p>
+<p>对于一个特定的产品，用 <span><span class="MathJax_Preview">Q</span><script type="math/tex">Q</script></span> 来表示该产品一系列的 “<span><span class="MathJax_Preview">Yes-No</span><script type="math/tex">Yes-No</script></span>" 类型的问题，用 <span><span class="MathJax_Preview">a ∈ \{Yes, No\}</span><script type="math/tex">a ∈ \{Yes, No\}</script></span> 来表示每个问题 <span><span class="MathJax_Preview">q ∈ Q</span><script type="math/tex">q ∈ Q</script></span> 的答案，对于每个问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span>，用 <span><span class="MathJax_Preview">R^q</span><script type="math/tex">R^q</script></span> 来表示该产品评论中关于问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的所有评论的集合；基于标注的 <span><span class="MathJax_Preview">(q_i,a_i,R^q_i)</span><script type="math/tex">(q_i,a_i,R^q_i)</script></span> $ \in (Q,A,R)$ 来训练一个二分类模型，在输入新的问题 <span><span class="MathJax_Preview">q^{new}</span><script type="math/tex">q^{new}</script></span> 和它相关的多条评论 <span><span class="MathJax_Preview">R^{q^{new}}</span><script type="math/tex">R^{q^{new}}</script></span> 时，模型能够正确预测出答案 <span><span class="MathJax_Preview">a^{new}</span><script type="math/tex">a^{new}</script></span> 。</p>
 <h3 id="2">2 模型描述<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <h4 id="21">2.1 模型概述<a class="headerlink" href="#21" title="Permanent link">&para;</a></h4>
-<p>本文提出了一个包含两个模块的模型，分别是属性分析模块(aspect analytics model)和答案预测模块(predictive answer model)，属性分析模块由 3阶自编码器构成，包含输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span>、<span><span class="MathJax_Preview">L</span><script type="math/tex">L</script></span> 个属性指示器 <span><span class="MathJax_Preview">z</span><script type="math/tex">z</script></span>、<span><span class="MathJax_Preview">L</span><script type="math/tex">L</script></span> 个属性特定的隐层表示 <span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> 和重构的输入 <span><span class="MathJax_Preview">v’</span><script type="math/tex">v’</script></span>，该模块的目的是通过学习得到参数矩阵 <span><span class="MathJax_Preview">W</span><script type="math/tex">W</script></span> 和 <span><span class="MathJax_Preview">U</span><script type="math/tex">U</script></span> ，当输入评论文本 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 或问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 时，计算得到该输入文本确定的属性指示器 <span><span class="MathJax_Preview">z</span><script type="math/tex">z</script></span> (<span><span class="MathJax_Preview">L</span><script type="math/tex">L</script></span>个) 和属性特定的隐层表示 <span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> (<span><span class="MathJax_Preview">L</span><script type="math/tex">L</script></span>个)。</p>
-<p>答案预测模块是在给定问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 和评论集合 <span><span class="MathJax_Preview">R</span><script type="math/tex">R</script></span> 时，来预测问题的答案 <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> ；当输入问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 时，通过训练好的属性分析模块计算出 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 所属的 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> 和 <span><span class="MathJax_Preview">h^l_q</span><script type="math/tex">h^l_q</script></span>，将属于第 <span><span class="MathJax_Preview">l</span><script type="math/tex">l</script></span> 个属性的评论构成集合 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span>，对于 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 中的每条评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 作为属性分析模块的输入来计算嵌入 <span><span class="MathJax_Preview">h^l_r</span><script type="math/tex">h^l_r</script></span> ，通过 <span><span class="MathJax_Preview">h^l_q</span><script type="math/tex">h^l_q</script></span> 和 <span><span class="MathJax_Preview">h^l_r</span><script type="math/tex">h^l_r</script></span> 来得到针对每个 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 和 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 的答案 <span><span class="MathJax_Preview">a(q, r)</span><script type="math/tex">a(q, r)</script></span>，再通过对 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 和 <span><span class="MathJax_Preview">l</span><script type="math/tex">l</script></span> 加权求和，得到问题的最终答案 <span><span class="MathJax_Preview">a_{q^*}</span><script type="math/tex">a_{q^*}</script></span>；最后，将 <span><span class="MathJax_Preview">a(q, r)</span><script type="math/tex">a(q, r)</script></span> 与最终答案 <span><span class="MathJax_Preview">a_{q^*}</span><script type="math/tex">a_{q^*}</script></span> 相同的评论筛选出，计算其与 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的相似度 <span><span class="MathJax_Preview">S^l_{a_{q^*}}(q, r)</span><script type="math/tex">S^l_{a_{q^*}}(q, r)</script></span>，按排序最前的评论 <span><span class="MathJax_Preview">r^*</span><script type="math/tex">r^*</script></span> 作为回答的证据（支持性评论）。</p>
-<h4 id="22">2.2 属性分析模块<a class="headerlink" href="#22" title="Permanent link">&para;</a></h4>
-<p>属性分析模块(Aspect Analytics Model, <strong>AAM</strong>)，目的是在所有产品相关的评论中检测和捕捉潜在的属性，使用无监督的学习方法，学习评论/问题文本与属性之间的复杂关系。</p>
-<h5 id="aam">AAM 模型结构<a class="headerlink" href="#aam" title="Permanent link">&para;</a></h5>
-<p>AAM 由一个 3-阶自编码器构成，其结构如图所示：</p>
-<p><img src="../../../img/AAM模型结构.png" alt="AAM模型结构" style="zoom:35%;" /></p>
-<p>它由输入层、属性指示层、属性特定的嵌入层和重构层组成。其中 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 表示输入文本，是一个维度与词表长度 <span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span> 相同的向量；<span><span class="MathJax_Preview">z</span><script type="math/tex">z</script></span> 表示属性指示器， 是一个 <span><span class="MathJax_Preview">L</span><script type="math/tex">L</script></span> 维的向量，每一维代表一个属性；<span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> 表示属性特定的嵌入，维度为 <span><span class="MathJax_Preview">J</span><script type="math/tex">J</script></span>，每个属性都对应着一个特定的嵌入向量；<span><span class="MathJax_Preview">v'</span><script type="math/tex">v'</script></span> 表示重构后的输入，维度与输入的 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 相同；参数矩阵 <span><span class="MathJax_Preview">W</span><script type="math/tex">W</script></span> 和 <span><span class="MathJax_Preview">U</span><script type="math/tex">U</script></span> 都是3阶矩阵。</p>
-<h5 id="_1">学习过程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h5>
-<p>首先，给定一个输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> ，它对于每个属性的相关概率通过一个 <span><span class="MathJax_Preview">\mathbb{softmax}</span><script type="math/tex">\mathbb{softmax}</script></span> 函数来计算   </p>
+<p>本文提出了一个可以直接输入问题文本和用户评论文本来预测答案的、端到端的神经阅读架构(Neural Reading Architecture, <strong>NRA</strong>)。它由 4 个神经层构成，分别为混合词嵌入、产品相关的问题阅读、带有问题的多条评论阅读和神经元投票用于答案预测。</p>
+<p>首先在混合词嵌入层，将问题序列 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 和每条评论序列 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 转换为混合词嵌入表示 <span><span class="MathJax_Preview">e^q,e^r</span><script type="math/tex">e^q,e^r</script></span>；然后在产品相关的问题阅读层，将问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的混合词嵌入表示 <span><span class="MathJax_Preview">e^q</span><script type="math/tex">e^q</script></span> 先后送入 <span><span class="MathJax_Preview">\text{Bi-LSTM}</span><script type="math/tex">\text{Bi-LSTM}</script></span>  和 <span><span class="MathJax_Preview">\text{Attention}</span><script type="math/tex">\text{Attention}</script></span> 网络来学习问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的上下文表示 <span><span class="MathJax_Preview">x^q</span><script type="math/tex">x^q</script></span>；之后在带有问题的多条评论阅读层将问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的上下文表示与评论序列 <span><span class="MathJax_Preview">e^r</span><script type="math/tex">e^r</script></span> 的每个词的混合词嵌入进行拼接，送到 <span><span class="MathJax_Preview">\text{Bi-LSTM}</span><script type="math/tex">\text{Bi-LSTM}</script></span> + <span><span class="MathJax_Preview">\text{Attention}</span><script type="math/tex">\text{Attention}</script></span> 网络学习生成多条问题意识的评论表示 <span><span class="MathJax_Preview">z^{r^j}</span><script type="math/tex">z^{r^j}</script></span>；最后在神经元投票用于答案预测层对 <span><span class="MathJax_Preview">z^{r^j}</span><script type="math/tex">z^{r^j}</script></span> 进行重构、加权求和、拼接和最大池化后送入逻辑回归模型进行分类预测。</p>
+<p>NRA 模型的结构如下图所示。</p>
+<p><img src="../../../img/NRA模型结构.png" alt="NRA" style="zoom:25%;" /></p>
+<h4 id="22">2.2 细节实现<a class="headerlink" href="#22" title="Permanent link">&para;</a></h4>
+<h5 id="_1">混合词嵌入<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h5>
+<p>作为 NRA 模型的输入，首先将问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 和它相关的评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 的每个词转换为模型可接受的形式。对于一个单词 <span><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span>，我们使用预训练的、维度为 <span><span class="MathJax_Preview">d</span><script type="math/tex">d</script></span> 的词向量 <span><span class="MathJax_Preview">e^w</span><script type="math/tex">e^w</script></span> 来初始化；此外，我们还采用卷积神经网络(CNN)来从组成单词的每个字符中生成词嵌入 <span><span class="MathJax_Preview">e^c</span><script type="math/tex">e^c</script></span>。</p>
+<p>假设单词 <span><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span> 是由 <span><span class="MathJax_Preview">l</span><script type="math/tex">l</script></span> 个字符 <span><span class="MathJax_Preview">v_{1:l}</span><script type="math/tex">v_{1:l}</script></span> 组成的，对于每个字符，用维度为 <span><span class="MathJax_Preview">d'</span><script type="math/tex">d'</script></span> 的向量表示</p>
 <div>
 <div class="MathJax_Preview">
-P(z^l|v) = \frac{\mathbb{exp}[-F(v,z^l)]}{\sum_{l^*}\mathbb{exp}[-F(v,z^{l^*})]}
+\text{v}_{1:l} = [\text{v}_1,\text{v}_2,...,\text{v}_l]. \quad \text{v}_j \in \mathbb{R}^{d'}
 </div>
 <script type="math/tex; mode=display">
-P(z^l|v) = \frac{\mathbb{exp}[-F(v,z^l)]}{\sum_{l^*}\mathbb{exp}[-F(v,z^{l^*})]}
+\text{v}_{1:l} = [\text{v}_1,\text{v}_2,...,\text{v}_l]. \quad \text{v}_j \in \mathbb{R}^{d'}
 </script>
 </div>
-<p>其中  </p>
+<p>对单词 <span><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span> 的字符序列 <span><span class="MathJax_Preview">\text{v}_{1:l}</span><script type="math/tex">\text{v}_{1:l}</script></span> 使用 CNN 来编码</p>
 <div>
 <div class="MathJax_Preview">
-F(v,z^l) = -∑^J_j \mathbb{log}\left[1 + \mathbb{exp}\left(\sum^K_k W^l_{kj} v_k + c_j\right)\right] - d^l
+e^c = CNN(\text{v}_{1:l}). \quad e^c \in \mathbb{R}^k
 </div>
 <script type="math/tex; mode=display">
-F(v,z^l) = -∑^J_j \mathbb{log}\left[1 + \mathbb{exp}\left(\sum^K_k W^l_{kj} v_k + c_j\right)\right] - d^l
+e^c = CNN(\text{v}_{1:l}). \quad e^c \in \mathbb{R}^k
 </script>
 </div>
-<p>对于任意所选的属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> , 我们可以计算每个隐层结点的激活概率 <span><span class="MathJax_Preview">h_j</span><script type="math/tex">h_j</script></span>  </p>
+<p>将单词 <span><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span> 的词级表示 <span><span class="MathJax_Preview">e^w</span><script type="math/tex">e^w</script></span> 和字符级表示 <span><span class="MathJax_Preview">e^c</span><script type="math/tex">e^c</script></span> 进行拼接，得到单词 <span><span class="MathJax_Preview">u</span><script type="math/tex">u</script></span> 的混合词嵌入</p>
 <div>
 <div class="MathJax_Preview">
-P(h_j|v, z^l) = σ\left(\sum^K_k W^l_{kj} v_k + c_j\right)
+e = e^w \oplus e^c. \quad e \in \mathbb{R}^{d+k}
 </div>
 <script type="math/tex; mode=display">
-P(h_j|v, z^l) = σ\left(\sum^K_k W^l_{kj} v_k + c_j\right)
+e = e^w \oplus e^c. \quad e \in \mathbb{R}^{d+k}
 </script>
 </div>
-<p>其中 <span><span class="MathJax_Preview">σ</span><script type="math/tex">σ</script></span> 是 <span><span class="MathJax_Preview">sigmoid</span><script type="math/tex">sigmoid</script></span> 函数。</p>
-<p>由 <span><span class="MathJax_Preview">P(z^l|v)</span><script type="math/tex">P(z^l|v)</script></span> 计算出的输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 在每个属性上的概率，我们选择概率最大的属性作为优势属性 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> ,可知 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> 是由输入文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 确定的. 3阶自编码器的编码器利用参数 <span><span class="MathJax_Preview">W^{l_v}_{kj}(∀k, ∀j)</span><script type="math/tex">W^{l_v}_{kj}(∀k, ∀j)</script></span> 来将输入的评论文本 <span><span class="MathJax_Preview">v</span><script type="math/tex">v</script></span> 通过计算 <span><span class="MathJax_Preview">P(h_j|v,z^{l_v})</span><script type="math/tex">P(h_j|v,z^{l_v})</script></span> 转换为 属性 <span><span class="MathJax_Preview">z^{l_v}</span><script type="math/tex">z^{l_v}</script></span> 的嵌入 <span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> ; 然后解码器利用参数 <span><span class="MathJax_Preview">U^{l_v}</span><script type="math/tex">U^{l_v}</script></span> 来将嵌入 <span><span class="MathJax_Preview">h</span><script type="math/tex">h</script></span> 重构成输入文本 <span><span class="MathJax_Preview">v'</span><script type="math/tex">v'</script></span>   </p>
+<p>采用以上方法，对问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 和它相关的评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 进行处理，分别得到混合词嵌入 <span><span class="MathJax_Preview">e^q 、e^{r}</span><script type="math/tex">e^q 、e^{r}</script></span>。</p>
+<h5 id="_2">产品相关的问题阅读<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
+<p>首先，采用 <span><span class="MathJax_Preview">\text{Bi-LSTM}</span><script type="math/tex">\text{Bi-LSTM}</script></span> 网络来编码问题序列 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> (长度为 <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> )并拼接成每个词的上下文表示</p>
 <div>
 <div class="MathJax_Preview">
-P(v'_k|h,z^{l_v}) = σ\left(\sum^J_j U^{l_v}_{kj} h_j - b'_k\right)
+\overset{\rightarrow}{s^q_i} = \overset{\longrightarrow}{\text{LSTM}}(q_i, \overset{\rightarrow}{s^q_{i-1}}). \quad \overset{\rightarrow}{s^q_i} \in \mathbb{R}^d
 </div>
 <script type="math/tex; mode=display">
-P(v'_k|h,z^{l_v}) = σ\left(\sum^J_j U^{l_v}_{kj} h_j - b'_k\right)
-</script>
-</div>
-<h4 id="23">2.3 答案预测模块<a class="headerlink" href="#23" title="Permanent link">&para;</a></h4>
-<p>答案预测模块(Predictive Answer Model), 目的是利用通过 AMM 训练得到的基于属性的分布和属性特定的嵌入，捕捉问题、评论和相关的答案之间的关系，从而预测新的问题的答案并给出证据(支持性评论)。</p>
-<h5 id="_2">答案预测<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h5>
-<p>首先，将给定的问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 作为 AAM 的输入v，计算出问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的属性分布 <span><span class="MathJax_Preview">P(z^l|q)</span><script type="math/tex">P(z^l|q)</script></span> , 同时将整个评论集合 <span><span class="MathJax_Preview">R</span><script type="math/tex">R</script></span> 依据评论的优势属性划分成不同的子集 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span>  </p>
-<div>
-<div class="MathJax_Preview">
-R^l = \{r ∈ R | l = \mathbb{argmax}_{l^*} \ P(z^{l^*}|r)\}
-</div>
-<script type="math/tex; mode=display">
-R^l = \{r ∈ R | l = \mathbb{argmax}_{l^*} \ P(z^{l^*}|r)\}
-</script>
-</div>
-<p>对于每个属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> , 计算 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 中每条评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 与问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 之间的相关性 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span>  </p>
-<div>
-<div class="MathJax_Preview">
-S^l(q,r) = \frac{\mathbb{cos}(z_q, z_r)}{\sum_{r^* ∈ R^l}\mathbb{cos}(z_q, z_{r^*})}
-</div>
-<script type="math/tex; mode=display">
-S^l(q,r) = \frac{\mathbb{cos}(z_q, z_r)}{\sum_{r^* ∈ R^l}\mathbb{cos}(z_q, z_{r^*})}
-</script>
-</div>
-<p>对于 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 中的每条评论 <span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> ，都对问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 计算一次答案为 <span><span class="MathJax_Preview">Yes</span><script type="math/tex">Yes</script></span> 的概率  </p>
-<div>
-<div class="MathJax_Preview">
-P^l(Yes|q,r) = σ(h^l_q · M · h^l_r)
-</div>
-<script type="math/tex; mode=display">
-P^l(Yes|q,r) = σ(h^l_q · M · h^l_r)
-</script>
-</div>
-<p>其中 <span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span> 为参数矩阵.</p>
-<p>最后，对每个属性 <span><span class="MathJax_Preview">z^l</span><script type="math/tex">z^l</script></span> 和评论子集 <span><span class="MathJax_Preview">R^l</span><script type="math/tex">R^l</script></span> 进行加权求和，计算问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的最终答案 <span><span class="MathJax_Preview">a^*_q</span><script type="math/tex">a^*_q</script></span>   </p>
-<div>
-<div class="MathJax_Preview">
-P(Yes|q,R) = \sum_{l∈L}P(z^l|q)\sum_{r∈R^l}S^l(q,r)P^l(Yes|q,r)
-</div>
-<script type="math/tex; mode=display">
-P(Yes|q,R) = \sum_{l∈L}P(z^l|q)\sum_{r∈R^l}S^l(q,r)P^l(Yes|q,r)
+\overset{\rightarrow}{s^q_i} = \overset{\longrightarrow}{\text{LSTM}}(q_i, \overset{\rightarrow}{s^q_{i-1}}). \quad \overset{\rightarrow}{s^q_i} \in \mathbb{R}^d
 </script>
 </div>
 <div>
 <div class="MathJax_Preview">
-P(No|q,R) = 1 - P(Yes|q,R)
+\overset{\leftarrow}{s^q_i} = \overset{\longleftarrow}{\text{LSTM}}(q_i, \overset{\leftarrow}{s^q_{i+1}}). \quad \overset{\leftarrow}{s^q_i} \in \mathbb{R}^d
 </div>
 <script type="math/tex; mode=display">
-P(No|q,R) = 1 - P(Yes|q,R)
+\overset{\leftarrow}{s^q_i} = \overset{\longleftarrow}{\text{LSTM}}(q_i, \overset{\leftarrow}{s^q_{i+1}}). \quad \overset{\leftarrow}{s^q_i} \in \mathbb{R}^d
 </script>
 </div>
-<h5 id="_3">支持性评论<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
-<p>假设问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 预测的最终答案为 <span><span class="MathJax_Preview">a^*_q</span><script type="math/tex">a^*_q</script></span> , 即 <span><span class="MathJax_Preview">a^*_q = \mathbb{argmax}_{a∈\{YEs,No\}}\ P(a|q,R)</span><script type="math/tex">a^*_q = \mathbb{argmax}_{a∈\{YEs,No\}}\ P(a|q,R)</script></span> , 我们定义可解释性得分函数 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span>  </p>
 <div>
 <div class="MathJax_Preview">
-S^l_{a^*_q}(q,r) = 
-    \begin{cases}
-        S^l(q,r) &amp; P(a^*_q|q,r) &gt; 1/2 \\
-        0                &amp; \text{otherwise}
-    \end{cases}
+s^q_i = \overset{\rightarrow}{s^q_i} \oplus \overset{\leftarrow}{s^q_i}. \quad s^q_i \in \mathbb{R}^{2d}
 </div>
 <script type="math/tex; mode=display">
-S^l_{a^*_q}(q,r) = 
-    \begin{cases}
-        S^l(q,r) & P(a^*_q|q,r) > 1/2 \\
-        0                & \text{otherwise}
-    \end{cases}
+s^q_i = \overset{\rightarrow}{s^q_i} \oplus \overset{\leftarrow}{s^q_i}. \quad s^q_i \in \mathbb{R}^{2d}
 </script>
 </div>
-<p>将每条评论按照 <span><span class="MathJax_Preview">S^l(q,r)</span><script type="math/tex">S^l(q,r)</script></span> 进行排序，得分较高的评论选作预测答案的证据。</p>
-<h3 id="_4">参考文献<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>Qian Yu and Wai Lam. <strong>Review-Aware Answer Prediction for Product-Related Questions Incorporating Aspects.</strong> WSDM 2018. [<a href="https://dl.acm.org/doi/proceedings/10.1145/3159652">paper</a>]</p>
+<p>然后对整个问题序列的每个词的上下文表示，采用单次注意力机制来获取整个序列上下文表示的加权和</p>
+<div>
+<div class="MathJax_Preview">
+\alpha^q_i = \text{softmax}(\text{v}^T_q \text{tanh}(\text{W}^q s^q_i)).
+</div>
+<script type="math/tex; mode=display">
+\alpha^q_i = \text{softmax}(\text{v}^T_q \text{tanh}(\text{W}^q s^q_i)).
+</script>
+</div>
+<div>
+<div class="MathJax_Preview">
+x^q = \sum_i \alpha^q_i s^q_i. \quad x^q \in \mathbb{R}^{2d}
+</div>
+<script type="math/tex; mode=display">
+x^q = \sum_i \alpha^q_i s^q_i. \quad x^q \in \mathbb{R}^{2d}
+</script>
+</div>
+<p>其中，<span><span class="MathJax_Preview">\text{W}^q \in \mathbb{R}^{2d \times 2d}、\text{v}_q \in \mathbb{R}^{2d}</span><script type="math/tex">\text{W}^q \in \mathbb{R}^{2d \times 2d}、\text{v}_q \in \mathbb{R}^{2d}</script></span> 为参数矩阵。</p>
+<h5 id="_3">带有问题的多条评论阅读<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
+<p>假设对于问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> ，有 <span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span> 条相关的评论，我们使用 <span><span class="MathJax_Preview">r^i(i \in [i,m])</span><script type="math/tex">r^i(i \in [i,m])</script></span> 来表示第 <span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span> 条评论。</p>
+<p>首先将每条评论的每个词的混合嵌入与问题 <span><span class="MathJax_Preview">q</span><script type="math/tex">q</script></span> 的上下文表示 <span><span class="MathJax_Preview">x^q</span><script type="math/tex">x^q</script></span> 进行拼接，然后采用 <span><span class="MathJax_Preview">\text{Bi-LSTM}</span><script type="math/tex">\text{Bi-LSTM}</script></span> 网络来编码并拼接成每个词的上下文表示</p>
+<div>
+<div class="MathJax_Preview">
+\overset{\rightarrow}{s^{r^i}_j} = \overset{\longrightarrow}{\text{LSTM}}(r^i_j \oplus x^q, \overset{\rightarrow}{s^{r^i}_{j-1}}). 
+</div>
+<script type="math/tex; mode=display">
+\overset{\rightarrow}{s^{r^i}_j} = \overset{\longrightarrow}{\text{LSTM}}(r^i_j \oplus x^q, \overset{\rightarrow}{s^{r^i}_{j-1}}). 
+</script>
+</div>
+<div>
+<div class="MathJax_Preview">
+\overset{\leftarrow}{s^{r^i}_j} = \overset{\longleftarrow}{\text{LSTM}}(r^i_j \oplus x^q, \overset{\leftarrow}{s^{r^i}_{j+1}}).
+</div>
+<script type="math/tex; mode=display">
+\overset{\leftarrow}{s^{r^i}_j} = \overset{\longleftarrow}{\text{LSTM}}(r^i_j \oplus x^q, \overset{\leftarrow}{s^{r^i}_{j+1}}).
+</script>
+</div>
+<div>
+<div class="MathJax_Preview">
+s^{r^i}_j = \overset{\rightarrow}{s^{r^i}_j} \oplus \overset{\leftarrow}{s^{r^i}_j}
+</div>
+<script type="math/tex; mode=display">
+s^{r^i}_j = \overset{\rightarrow}{s^{r^i}_j} \oplus \overset{\leftarrow}{s^{r^i}_j}
+</script>
+</div>
+<p>同样采用单次注意力机制来获得问题意识的评论表示</p>
+<div>
+<div class="MathJax_Preview">
+\alpha^{r^i}_j = \text{softmax}(\text{v}^T_{r^i} \text{tanh}(\text{W}^{r^i} s^{r^i}_j)).
+</div>
+<script type="math/tex; mode=display">
+\alpha^{r^i}_j = \text{softmax}(\text{v}^T_{r^i} \text{tanh}(\text{W}^{r^i} s^{r^i}_j)).
+</script>
+</div>
+<div>
+<div class="MathJax_Preview">
+z^{r^i} = \sum_j \alpha^{r^i}_j s^{r^i}_j.
+</div>
+<script type="math/tex; mode=display">
+z^{r^i} = \sum_j \alpha^{r^i}_j s^{r^i}_j.
+</script>
+</div>
+<h5 id="_4">神经元投票用于答案预测<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<p>在此阶段，我们为最终的答案预测设计一个投票函数，从而在多条问题意识的评论表示中选择出重要的证据。</p>
+<p>我们使用 <span><span class="MathJax_Preview">c_{i,j}</span><script type="math/tex">c_{i,j}</script></span> 来表示第 <span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span> 条和第 <span><span class="MathJax_Preview">j</span><script type="math/tex">j</script></span> 条评论之间的相似度，对 <span><span class="MathJax_Preview">c_{i,j}</span><script type="math/tex">c_{i,j}</script></span> 进行如下定义</p>
+<div>
+<div class="MathJax_Preview">
+c_{i,j} = \begin{cases}
+                    0                               &amp; \text{if} \ i = j \\
+                    z^{r^i} · z^{r^j} &amp; \text{if} \ i ≠ j
+                    \end{cases}
+</div>
+<script type="math/tex; mode=display">
+c_{i,j} = \begin{cases}
+                    0                               & \text{if} \ i = j \\
+                    z^{r^i} · z^{r^j} & \text{if} \ i ≠ j
+                    \end{cases}
+</script>
+</div>
+<p>给定第 <span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span> 条评论，计算其他评论支持性得分的分布</p>
+<div>
+<div class="MathJax_Preview">
+{\beta}_{i,j} = \frac{\text{exp}(c_{i,j})}{\sum^m_{t=1} \text{exp} (c_{i,t})}.
+</div>
+<script type="math/tex; mode=display">
+{\beta}_{i,j} = \frac{\text{exp}(c_{i,j})}{\sum^m_{t=1} \text{exp} (c_{i,t})}.
+</script>
+</div>
+<p>我们使用 <span><span class="MathJax_Preview">\tilde{z^{r^i}}</span><script type="math/tex">\tilde{z^{r^i}}</script></span> 来表示第 <span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span> 条评论的、包含了从其他评论中获得了支持性信息的嵌入表示</p>
+<div>
+<div class="MathJax_Preview">
+\tilde{z^{r^i}} = \sum^m_{j=1} \beta_{i,j}z^{r^i}.
+</div>
+<script type="math/tex; mode=display">
+\tilde{z^{r^i}} = \sum^m_{j=1} \beta_{i,j}z^{r^i}.
+</script>
+</div>
+<p>因此，我们可以从不同的角度来表示产品意识的评论：<span><span class="MathJax_Preview">z^{r^i}</span><script type="math/tex">z^{r^i}</script></span> ，<span><span class="MathJax_Preview">\tilde{z^{r^i}}</span><script type="math/tex">\tilde{z^{r^i}}</script></span> 和 <span><span class="MathJax_Preview">z^{r^i} \odot \ \tilde{z^{r^i}}</span><script type="math/tex">z^{r^i} \odot \ \tilde{z^{r^i}}</script></span> 。将它们拼接后进行最大池化来选择出重要的特征</p>
+<div>
+<div class="MathJax_Preview">
+g = \text{MaxPooling}([z^{r^i},\tilde{z^{r^i}},z^{r^i} \odot \ \tilde{z^{r^i}}]). \quad g \in \mathbb{R}^m
+</div>
+<script type="math/tex; mode=display">
+g = \text{MaxPooling}([z^{r^i},\tilde{z^{r^i}},z^{r^i} \odot \ \tilde{z^{r^i}}]). \quad g \in \mathbb{R}^m
+</script>
+</div>
+<p>最后，使用逻辑回归模型进行分类</p>
+<div>
+<div class="MathJax_Preview">
+a = \text{Logistic}(g).
+</div>
+<script type="math/tex; mode=display">
+a = \text{Logistic}(g).
+</script>
+</div>
+<h3 id="_5">参考文献<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>Miao. Fan, Chao. Feng, Mingming. Sun, Ping. Li, and Haifeng. Wang. <strong>Reading Customer Reviews to Answer Product-related Questions.</strong> SDM 2019. [<a href="http://research.baidu.com/Public/uploads/5d12ea0d1a7aa.pdf">paper</a>]</p>
                 
                   
                 
@@ -1936,7 +1973,7 @@ S^l_{a^*_q}(q,r) =
                   <div class="md-source-date">
                     <small>
                       
-                        最后更新: 2020年3月9日
+                        最后更新: 2020年3月15日
                       
                     </small>
                   </div>
@@ -1950,9 +1987,9 @@ S^l_{a^*_q}(q,r) =
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://derrors.github.io/notes/PRQA/AAM/";
+      this.page.url = "https://derrors.github.io/notes/PRQA/NRA/";
       this.page.identifier =
-        "notes/PRQA/AAM/";
+        "notes/PRQA/NRA/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1974,7 +2011,7 @@ S^l_{a^*_q}(q,r) =
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../../nlp/others/" title="4. 其他" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../AAM/" title="AAM" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1983,19 +2020,19 @@ S^l_{a^*_q}(q,r) =
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                4. 其他
+                AAM
               </span>
             </div>
           </a>
         
         
-          <a href="../NRA/" title="NRA" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../DANN/" title="DANN" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                NRA
+                DANN
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

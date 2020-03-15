@@ -103,6 +103,10 @@ nav:
   - 阅读笔记: 
       - PRQA: 
         - AAM: notes/PRQA/AAM.md
+        - NRA: notes/PRQA/NRA.md
+        - DANN: notes/PRQA/DANN.md
+        - BERTQA: notes/PRQA/BERTQA.md
+        - QAR-Net: notes/PRQA/QAR-Net.md
 
   - 文档 & 教程: 
       - 基于 Material for MkDocs 搭建静态博客: documents/blog/blog.md
