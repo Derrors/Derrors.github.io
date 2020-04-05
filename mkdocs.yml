@@ -1,0 +1,96 @@
+# Project information
+site_name: 基于 Material for MkDocs 搭建静态网页
+site_description: 
+site_author: derrors
+site_url: https://derrors.github.io/
+
+
+# Repository
+repo_name: 'Derrors/Derrors.github.io'
+repo_url: 'https://github.com/Derrors/Derrors.github.io/'
+
+# Copyright
+copyright: "Copyright &copy; 2019 - 2020 Qinghe Li"
+
+
+theme:
+  name: material
+  palette:
+    primary: 'deep purple'
+    accent: 'deep purple'
+
+  feature:
+    tabs: true
+
+  #font:
+    #text: 'Ubuntu'
+    #code: 'Ubuntu Mono'
+  
+  favicon: 'assets/images/favicon.ico'
+
+  language: 'zh'
+
+
+# Customization
+extra:
+  social:
+    - type: github
+      link: https://github.com/Derrors
+
+  search:
+    language: 'ja'
+
+  disqus: 'derrors'
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+
+# Google Analytics
+google_analytics:
+  - "UA-156919721-1"
+  - "auto"
+
+
+edit_uri:
+
+plugins:
+  - search
+
+nav:
+  - Material for MkDocs: 
+      - 1.介绍: 介绍.md
+      - 2.安装 Mkdocs && Material: 安装 Mkdocs && Material.md
+      - 3.创建新项目: 创建新项目.md
+      - 4.配置 YAML 文件: 配置 YAML 文件.md
+      - 5.开发服务器并生成网页: 开发服务器并生成网页.md
+      - 6.将网页部署到 GitHub Pages: 将网页部署到 GitHub Pages.md
+      - 7.Reference: Reference.md
